@@ -21,9 +21,10 @@ pipeline {
         stage('Deploiement Ansible') {
             steps {
                 ansiblePlaybook (
+                    inventory: '${WORKPLACE}/inventory.ini',
                     colorized: true,
                     become: true,
-                    playbook: 'playbook.yml'
+                    playbook: '${WORKPLACE}/playbook.yml',
                 )  
             }
         }
