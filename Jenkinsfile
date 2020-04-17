@@ -18,5 +18,12 @@ pipeline {
 				sh 'npm test'
 			}
 		}
+        stage('Deploiement Ansible') {
+            ansiblePlaybook (
+                colorized: true,
+                become: true,
+                playbook: 'playbook.yml'
+            )
+        }
 	}
 }
