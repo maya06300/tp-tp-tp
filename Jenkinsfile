@@ -20,11 +20,11 @@ pipeline {
 		}
         stage('Deploiement Ansible') {
             steps {
-                ansiblePlaybook {
+                ansiblePlaybook (
                     colorized: true,
                     become: true,
                     playbook: 'playbook.yml'
-                  }  
+                )  
             }
         }
 	}
