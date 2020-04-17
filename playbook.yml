@@ -16,9 +16,10 @@
       apt: 
         name: npm
         state: present
-    - name: 
+
+    - name: Récupération du projet Git
       git:
-        repo: 
-        dest: 
+        repo: https://github.com/maya06300/tp-tp-tp
+        dest: /home/ansible/exercice-tp-final
                 
 ...
