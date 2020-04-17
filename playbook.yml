@@ -1,6 +1,6 @@
 ---
 - name: 
-  hosts: 192.168.1.35
+  hosts: 192.168.1.98
   remote_user: root  
       
   tasks: 
