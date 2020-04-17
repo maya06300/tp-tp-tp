@@ -21,5 +21,9 @@
       git:
         repo: https://github.com/maya06300/tp-tp-tp
         dest: /home/ansible/exercice-tp-final
+
+    - name: Installation plugin
+      jenkins_plugin:
+        name: build-pipeline-plugin
                 
 ...
