@@ -24,7 +24,7 @@ pipeline {
                     inventory: '${WORKPLACE}/inventory.ini',
                     colorized: true,
                     become: true,
-                    playbook: '${WORKPLACE}/playbook.yml',
+                    playbook: '${/var/jenkins_home/workspace}/playbook.yml',
                 )  
             }
         }
