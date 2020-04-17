@@ -23,7 +23,7 @@ pipeline {
                 ansiblePlaybook (
                     colorized: true,
                     become: true,
-                    playbook: 'playbook.yml'
+                    playbook: 'C:\Users\utilisateur\Desktop\simple-react-app-with-unit-testing-master1/playbook.yml'
                 )  
             }
         }
