@@ -23,7 +23,7 @@ pipeline {
                 ansiblePlaybook (
                     colorized: true,
                     become: true,
-                    playbook: 'playbook.yml'
+                    playbook: 'ansible-playbook/playbook.yml'
                 )  
             }
         }
