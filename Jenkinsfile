@@ -19,11 +19,13 @@ pipeline {
 			}
 		}
         stage('Deploiement Ansible') {
-            ansiblePlaybook (
-                colorized: true,
-                become: true,
-                playbook: 'playbook.yml'
-            )
+            steps {
+                ansiblePlaybook {
+                    colorized: true,
+                    become: true,
+                    playbook: 'playbook.yml'
+                  }  
+            }
         }
 	}
 }
